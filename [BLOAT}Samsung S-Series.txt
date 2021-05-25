@@ -17,6 +17,7 @@ cmd package install-existing com.google.android.apps.books
 cmd package install-existing com.google.android.apps.docs
 cmd package install-existing com.google.android.apps.magazines
 cmd package install-existing com.google.android.apps.maps
+#cmd package install-existing com.google.android.apps.photos  # Google Photos
 cmd package install-existing com.google.android.apps.plus
 cmd package install-existing com.google.android.apps.tachyon
 cmd package install-existing com.google.android.talk
@@ -33,10 +34,12 @@ cmd package install-existing com.samsung.android.app.notes
 #cmd package install-existing com.samsung.android.calendar  # (Samsung Calendar)
 cmd package install-existing com.samsung.android.messaging  # alternative: Signal
 cmd package install-existing com.samsung.android.oneconnect  # (SmartThings)
+#cmd package install-existing com.sec.android.app.launcher  # alternative: Shade Launcher, don't uninstall until you have another launcher installed
 cmd package install-existing com.sec.android.app.sbrowser  # alternative: Firefox or Bromite
 cmd package install-existing com.tripadvisor.tripadvisor
 cmd package install-existing com.spotify.music
 cmd package install-existing com.netflix.mediaclient
+cmd package install-existing com.touchtype.swiftkey
 
 # Printing
 cmd package install-existing com.android.bips
@@ -45,7 +48,7 @@ cmd package install-existing com.google.android.printservice.recommendation
 
 # Cloud/backups
 cmd package install-existing com.android.backupconfirm
-cmd package install-existing com.android.sharedstoragebackup
+#cmd package install-existing com.android.sharedstoragebackup
 cmd package install-existing com.samsung.android.mobileservice
 cmd package install-existing com.samsung.android.scloud
 #cmd package install-existing com.sec.android.easyMover  # (Smart Switch)
@@ -65,8 +68,6 @@ cmd package install-existing com.dsi.ant.plugins.antplus
 cmd package install-existing com.dsi.ant.sample.acquirechannels
 cmd package install-existing com.dsi.ant.server
 cmd package install-existing com.dsi.ant.service.socket
-cmd package install-existing com.google.ar.core
-cmd package install-existing com.google.vr.vrcore
 cmd package install-existing com.mobeam.barcodeService
 cmd package install-existing com.monotype.android.font.chococooky
 cmd package install-existing com.monotype.android.font.cooljazz
@@ -76,10 +77,6 @@ cmd package install-existing com.samsung.android.allshare.service.fileshare
 cmd package install-existing com.samsung.android.allshare.service.mediashare
 cmd package install-existing com.samsung.android.app.advsounddetector
 cmd package install-existing com.samsung.android.app.assistantmenu
-cmd package install-existing com.samsung.android.app.camera.sticker.facear.preload
-cmd package install-existing com.samsung.android.app.camera.sticker.facear3d.preload
-cmd package install-existing com.samsung.android.app.camera.sticker.facearavatar.preload
-cmd package install-existing com.samsung.android.app.camera.sticker.facearframe.preload
 cmd package install-existing com.samsung.android.app.camera.sticker.stamp.preload
 cmd package install-existing com.samsung.android.app.galaxyfinder
 cmd package install-existing com.samsung.android.app.ledbackcover
@@ -88,9 +85,6 @@ cmd package install-existing com.samsung.android.app.reminder
 #cmd package install-existing com.samsung.android.app.smartcapture  # (screenshot toolbar)
 cmd package install-existing com.samsung.android.app.watchmanager
 cmd package install-existing com.samsung.android.app.watchmanagerstub
-cmd package install-existing com.samsung.android.aremoji
-cmd package install-existing com.samsung.android.hmt.vrshell
-cmd package install-existing com.samsung.android.hmt.vrsvc
 cmd package install-existing com.samsung.android.kidsinstaller
 cmd package install-existing com.samsung.android.sdk.professionalaudio.utility.jammonitor
 cmd package install-existing com.samsung.android.spdfnote
@@ -109,12 +103,24 @@ cmd package install-existing com.sec.android.mimage.gear360editor
 cmd package install-existing com.sec.android.mimage.photoretouching
 cmd package install-existing com.sec.android.provider.snote
 cmd package install-existing com.samsung.android.privateshare
+#pm uninstall --user 0 com.android.egg  # Android easter egg (hidden in About phone)
 
 # Google stuff
 cmd package install-existing com.android.hotwordenrollment.okgoogle
+cmd package install-existing com.android.hotwordenrollment.xgoogle
 cmd package install-existing com.google.android.gm
 cmd package install-existing com.google.android.googlequicksearchbox
 cmd package install-existing com.google.audio.hearing.visualization.accessibility.scribe
+cmd package install-existing com.google.android.gms.location.history
+#-----------------
+#cmd package install-existing com.android.vending  # Google Play Store
+#cmd package install-existing com.google.android.as  # Device Personalization Services
+#cmd package install-existing com.google.android.gm  # Gmail
+#cmd package install-existing com.google.android.gms  # Google Play Services, alternative: MicroG (needs root)
+#cmd package install-existing com.google.android.gsf  # Google Services Framework
+#cmd package install-existing com.google.android.partnersetup  # Google Partner Setup
+#cmd package install-existing com.google.android.onetimeinitializer  # used when setting up phone
+#cmd package install-existing com.google.android.setupwizard  # used when setting up phone
 
 # Misc bloat
 cmd package install-existing com.blurb.checkout
@@ -122,6 +128,7 @@ cmd package install-existing com.cequint.ecid
 cmd package install-existing com.gotv.nflgamecenter.us.lite
 cmd package install-existing com.hancom.office.editor.hidden
 cmd package install-existing com.imdb.mobile
+cmd package install-existing com.netflix.partner.activation
 cmd package install-existing com.nuance.swype.input
 cmd package install-existing com.policydm
 cmd package install-existing com.samsung.aasaservice
@@ -137,7 +144,6 @@ cmd package install-existing com.samsung.android.app.spage
 cmd package install-existing com.samsung.android.app.storyalbumwidget
 cmd package install-existing com.samsung.android.app.talkback
 cmd package install-existing com.samsung.android.app.tips
-cmd package install-existing com.samsung.android.app.vrsetupwizardstub
 cmd package install-existing com.samsung.android.app.withtv
 cmd package install-existing com.samsung.android.bbc.bbcagent
 cmd package install-existing com.samsung.android.beaconmanager
@@ -154,7 +160,6 @@ cmd package install-existing com.samsung.android.svoice
 cmd package install-existing com.samsung.android.svoiceime
 cmd package install-existing com.samsung.android.tripwidget
 cmd package install-existing com.samsung.android.visioncloudagent
-cmd package install-existing com.samsung.android.visionintelligence
 cmd package install-existing com.samsung.app.highlightplayer
 cmd package install-existing com.samsung.daydream.customization
 cmd package install-existing com.samsung.dcmservice
@@ -198,7 +203,7 @@ cmd package install-existing com.sec.android.app.wfdbroker
 cmd package install-existing com.sec.android.app.withtv
 cmd package install-existing com.sec.android.app.wlantest
 cmd package install-existing com.sec.android.AutoPreconfig
-cmd package install-existing com.sec.android.daemonapp
+cmd package install-existing com.sec.android.daemonapp  # used by Samsung for Weather,Stocks,News,etc
 cmd package install-existing com.sec.android.diagmonagent
 cmd package install-existing com.sec.android.easyonehand
 cmd package install-existing com.sec.android.emergencylauncher
@@ -277,6 +282,18 @@ cmd package install-existing com.samsung.android.game.gos
 cmd package install-existing com.samsung.android.gametuner.thin
 cmd package install-existing com.sec.android.app.gamehub
 
+# VR
+cmd package install-existing com.google.ar.core
+cmd package install-existing com.google.vr.vrcore
+cmd package install-existing com.samsung.android.app.camera.sticker.facear.preload
+cmd package install-existing com.samsung.android.app.camera.sticker.facear3d.preload
+cmd package install-existing com.samsung.android.app.camera.sticker.facearavatar.preload
+cmd package install-existing com.samsung.android.app.camera.sticker.facearframe.preload
+cmd package install-existing com.samsung.android.app.vrsetupwizardstub
+cmd package install-existing com.samsung.android.aremoji
+cmd package install-existing com.samsung.android.hmt.vrshell
+cmd package install-existing com.samsung.android.hmt.vrsvc
+
 # Bixby
 cmd package install-existing com.samsung.android.app.routines
 cmd package install-existing com.samsung.android.app.settings.bixby
@@ -288,6 +305,7 @@ cmd package install-existing com.samsung.android.bixby.service
 cmd package install-existing com.samsung.android.bixby.voiceinput
 cmd package install-existing com.samsung.android.bixby.wakeup
 cmd package install-existing com.samsung.android.bixbyvision.framework
+cmd package install-existing com.samsung.android.visionintelligence
 cmd package install-existing com.samsung.android.voicewakeup
 cmd package install-existing com.samsung.systemui.bixby
 cmd package install-existing com.samsung.systemui.bixby2
@@ -313,3 +331,8 @@ cmd package install-existing com.sec.enterprise.mdm.vpn
 cmd package install-existing com.sec.knox.foldercontainer
 cmd package install-existing com.sec.knox.knoxsetupwizardclient
 cmd package install-existing com.sec.knox.switcher
+
+# Samsung DeX
+#pm uninstall --user 0 com.sec.android.desktopmode.uiservice
+#pm uninstall --user 0 com.samsung.desktopsystemui
+#pm uninstall --user 0 com.sec.android.app.desktoplauncher
