@@ -34,7 +34,6 @@ pm uninstall -k --user 0 com.samsung.android.app.notes
 #pm uninstall -k --user 0 com.samsung.android.calendar  # (Samsung Calendar)
 pm uninstall -k --user 0 com.samsung.android.messaging  # alternative: Signal
 pm uninstall -k --user 0 com.samsung.android.oneconnect  # (SmartThings)
-#pm uninstall -k --user 0 com.sec.android.app.launcher  # alternative: Shade Launcher, don't uninstall until you have another launcher installed
 pm uninstall -k --user 0 com.sec.android.app.sbrowser  # alternative: Firefox or Bromite
 pm uninstall -k --user 0 com.tripadvisor.tripadvisor
 pm uninstall -k --user 0 com.spotify.music

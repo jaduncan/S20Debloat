@@ -34,7 +34,6 @@ cmd package install-existing com.samsung.android.app.notes
 #cmd package install-existing com.samsung.android.calendar  # (Samsung Calendar)
 cmd package install-existing com.samsung.android.messaging  # alternative: Signal
 cmd package install-existing com.samsung.android.oneconnect  # (SmartThings)
-#cmd package install-existing com.sec.android.app.launcher  # alternative: Shade Launcher, don't uninstall until you have another launcher installed
 cmd package install-existing com.sec.android.app.sbrowser  # alternative: Firefox or Bromite
 cmd package install-existing com.tripadvisor.tripadvisor
 cmd package install-existing com.spotify.music
