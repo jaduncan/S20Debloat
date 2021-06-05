@@ -26,3 +26,15 @@ I've seen people using adb in Termux (a terminal emulator on Android) too so try
    1. *You may not want to uninstall everything in the list. For example, `pm uninstall -k --user 0 com.sec.android.app.samsungapps`  will uninstall the Galaxy Store. Feel free to open the list in a text editor and remove any lines you wish before entering them into the shell.
    
 4. Close the shell by typing `exit`.
+
+### Extra (root)
+
+Lots of people have been seeing Game Optimisation Service popping back up again after using `pm uninstall (...)`. **If you have root**, you can get around this as follows ([thanks to justin22](https://forum.xda-developers.com/t/force-remove-gameoptimizationservice-howto.4223511/post-84705313)):
+
+1. Open a terminal and enter `adb shell`.
+2. If you've already removed the app with the debloat list, reinstall it with `cmd package install-existing com.samsung.android.game.gos`.
+3. Enter `su` and accept the prompt on your device to give superuser access to "Shell" ([screenshot](https://imgur.com/yLGRKUL)). If you can, select to only grant access temporarily/once.
+4. Enter `pm hide com.samsung.android.games.gos`.
+5. Exit su by entering `exit`. Exit the shell by entering `exit` again. Done!
+
+You can undo this by substituting the command in step 4 with `pm unhide com.samsung.android.games.gos`.
