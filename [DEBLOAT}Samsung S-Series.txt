@@ -336,3 +336,8 @@ pm uninstall -k --user 0 com.samsung.android.spayfw
 #pm uninstall --user 0 com.sec.android.desktopmode.uiservice
 #pm uninstall --user 0 com.samsung.desktopsystemui
 #pm uninstall --user 0 com.sec.android.app.desktoplauncher
+
+# Experimental
+pm uninstall --user 0 com.samsung.android.arzone
+pm uninstall -k --user 0 com.sec.android.app.myfiles  # (file manager)
+#pm uninstall -k --user 0 com.sec.android.app.samsungapps  # (Galaxy Store)
